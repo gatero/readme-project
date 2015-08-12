@@ -245,6 +245,8 @@ Do not mix actual code changes with coding style changes in a single PR. Instead
 
 ### Troubleshooting
 
+**Mandatory**
+
 This section should describe a list of steps to take when the app fails (that is, when the dev environment can't be set up properly) in order to obtain enough information to fix the issue. It is not actually meant for app-specific errors (e.g. the app itself doesn't behave as it should), but if added they should be in a subsection.
 
 Optionally, and in the case of common errors, workarounds can also be added here.
@@ -253,8 +255,6 @@ Example:
 
 ~~~markdown
 ## Troubleshooting
-
-**Mandatory**
 
 If an error occurs when attempting `vagrant up`, verify the following:
 

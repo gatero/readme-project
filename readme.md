@@ -150,20 +150,18 @@ Anything that is meant to assist the development of another product or web app s
 
 If it's a CLI tool, add something like this:
 
-```markdown
-## Usage
-~~~sh
-$ super-tool [options] -i infile -o outfile
-~~~
+    ## Usage
+    ~~~sh
+    $ super-tool [options] -i infile -o outfile
+    ~~~
 
-Options:
+    Options:
 
-    -p <file>  Prints file before processing
-    -l <num>   Processes the first <num> lines
-    -n         Add newlines
-    -N         Add CRLF newlines
-    -d <dir>   Output into <dir>
-```
+        -p <file>  Prints file before processing
+        -l <num>   Processes the first <num> lines
+        -n         Add newlines
+        -N         Add CRLF newlines
+        -d <dir>   Output into <dir>
 
 If it's a GUI tool, add screenshots demonstrating common usage.
 
@@ -173,24 +171,22 @@ If it's a GUI tool, add screenshots demonstrating common usage.
 
 This section, if included, should be a subsection of Usage above. It's recommended for CLI tools, and should include more varied examples than in the Quick Start section. For example:
 
-```markdown
-### Examples
+    ### Examples
 
-**Process and output into two directories at once:**
-~~~sh
-$ super-tool -d app/out -i file.txt -o - | tee app/processed.txt
-~~~
+    **Process and output into two directories at once:**
+    ~~~sh
+    $ super-tool -d app/out -i file.txt -o - | tee app/processed.txt
+    ~~~
 
-**Sort and then process, with CRLF (Windows-style) newlines**
-~~~sh
-$ cat file.txt | sort | super-tool -N
-~~~
+    **Sort and then process, with CRLF (Windows-style) newlines**
+    ~~~sh
+    $ cat file.txt | sort | super-tool -N
+    ~~~
 
-**Add crazy new lines to everything**
-~~~sh
-$ find . -name "*.txt" | xargs -nN -d app/out
-~~~
-```
+    **Add crazy new lines to everything**
+    ~~~sh
+    $ find . -name "*.txt" | xargs -nN -d app/out
+    ~~~
 
 ### Other considerations
 
